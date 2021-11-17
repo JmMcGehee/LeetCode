@@ -1,3 +1,6 @@
+// LeetCode #1
+// Brute force solution
+
 let twoSum = function(nums, target) {
     
     for (let i = 0; i < nums.length; i++) {
