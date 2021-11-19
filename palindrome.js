@@ -13,20 +13,18 @@
 // Return true if no "errors" are discovered
 
 let isPalindrome = function(x) {
-   number = x.toString();
-//    console.log(number); 
-//    console.log(number.length);
+    let number = x.toString();
+    let palindrome = Boolean; 
     for (let i = 0; i < number.length; i++) {
-        console.log(number[i], i);
-        console.log(number[(number.length - 1) - i], (number.length - 1) - i);
-        if (number.charAt(i) !== number.charAt((number.length -1) - i)) {
-            console.log(false);   
-            return false
+        if (number.charAt(i) != number.charAt((number.length -1) - i)) {
+            palindrome = false; 
+            return;
         } else {
-            console.log(true);
-            return true
+            palindrome = number.charAt(i) == number.charAt((number.length -1) - i);
         }
+        console.log(palindrome);
     }
+    return palindrome;
 };
 
 isPalindrome(1000021);
